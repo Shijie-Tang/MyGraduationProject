@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.325" />
+        <entry key="app/src/main/res/drawable-v21/thumb_layout.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_logopain2d_foreground.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/arrowl2.xml" value="0.403" />
+        <entry key="app/src/main/res/drawable/border.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/button_background.xml" value="0.3885" />
+        <entry key="app/src/main/res/drawable/button_layout.xml" value="0.40520833333333334" />
+        <entry key="app/src/main/res/drawable/button_same.xml" value="0.296" />
+        <entry key="app/src/main/res/drawable/buttonround.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/drawable/delete_foreground.xml" value="0.403" />
+        <entry key="app/src/main/res/drawable/delete_s3.xml" value="0.402" />
+        <entry key="app/src/main/res/drawable/dialog_background.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/dialog_background_transparent.xml" value="0.254" />
+        <entry key="app/src/main/res/drawable/dialog_button.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/dialog_text.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/download_button.xml" value="0.403" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.40520833333333334" />
+        <entry key="app/src/main/res/drawable/imageview_selector.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/mybutton.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/mysp.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/nextbutton.xml" value="0.234" />
+        <entry key="app/src/main/res/drawable/press.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/press_2.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/pressed_button_layout.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/preview_foreground.xml" value="0.403" />
+        <entry key="app/src/main/res/drawable/preview_s3.xml" value="0.402" />
+        <entry key="app/src/main/res/drawable/radiobutton.xml" value="0.403" />
+        <entry key="app/src/main/res/drawable/round_button.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/roundcorner.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/selectedbutton.xml" value="0.2245" />
+        <entry key="app/src/main/res/drawable/selectedpdbutton.xml" value="0.2655" />
+        <entry key="app/src/main/res/drawable/shape.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/tickmark_layout.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/toast_drawable.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/view_pd_button.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/drawable/view_survey_button.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activiry_survey_datequestion.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/activity_binary_question.xml" value="0.1791363830696879" />
+        <entry key="app/src/main/res/layout/activity_check.xml" value="0.37826797385620914" />
+        <entry key="app/src/main/res/layout/activity_colorpick.xml" value="0.3194444444444444" />
+        <entry key="app/src/main/res/layout/activity_create_patient_doc.xml" value="0.38112745098039214" />
+        <entry key="app/src/main/res/layout/activity_define_password.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_download.xml" value="0.38112745098039214" />
+        <entry key="app/src/main/res/layout/activity_draw.xml" value="0.3194444444444444" />
+        <entry key="app/src/main/res/layout/activity_faq.xml" value="0.36887254901960786" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.32598039215686275" />
+        <entry key="app/src/main/res/layout/activity_login2.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23920316225837662" />
+        <entry key="app/src/main/res/layout/activity_nav.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_paintype.xml" value="0.3194444444444444" />
+        <entry key="app/src/main/res/layout/activity_question_group.xml" value="0.3582516339869281" />
+        <entry key="app/src/main/res/layout/activity_question_group_new.xml" value="0.33133817870884996" />
+        <entry key="app/src/main/res/layout/activity_radio_button_new.xml" value="0.5893466186523438" />
+        <entry key="app/src/main/res/layout/activity_reset_password.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_select.xml" value="0.315359477124183" />
+        <entry key="app/src/main/res/layout/activity_select_file.xml" value="0.3459715639810427" />
+        <entry key="app/src/main/res/layout/activity_survey_datequestion.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_survey_login.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/activity_survey_main.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/activity_survey_numberquestion.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/activity_survey_password.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/activity_survey_radiobutton.xml" value="0.6874462890625" />
+        <entry key="app/src/main/res/layout/activity_survey_range.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/activity_survey_selectquestion.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_survey_survey.xml" value="0.3075980392156863" />
+        <entry key="app/src/main/res/layout/activity_survey_textquestion.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_survey_view_survey.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.315359477124183" />
+        <entry key="app/src/main/res/layout/content_download2.xml" value="0.17502258355916891" />
+        <entry key="app/src/main/res/layout/content_login.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/dialog_insert_pat_code.xml" value="0.38112745098039214" />
+        <entry key="app/src/main/res/layout/dialog_password_add.xml" value="0.315359477124183" />
+        <entry key="app/src/main/res/layout/dialog_password_block.xml" value="0.2506174723307291" />
+        <entry key="app/src/main/res/layout/dialog_password_save.xml" value="0.3194444444444444" />
+        <entry key="app/src/main/res/layout/dialog_password_select.xml" value="0.315359477124183" />
+        <entry key="app/src/main/res/layout/dialog_tips.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/files_list.xml" value="0.3194444444444444" />
+        <entry key="app/src/main/res/layout/fragment_create_doc.xml" value="0.512082756890191" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.35947712418300654" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.38112745098039214" />
+        <entry key="app/src/main/res/layout/fragment_scene_1.xml" value="0.39983673095703126" />
+        <entry key="app/src/main/res/layout/fragment_scene_1_repalce.xml" value="0.33133817870884996" />
+        <entry key="app/src/main/res/layout/fragment_scene_2.xml" value="0.33133817870884996" />
+        <entry key="app/src/main/res/layout/fragment_scene_3.xml" value="0.38112745098039214" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/scene_checkview_s1.xml" value="0.37826797385620914" />
+        <entry key="app/src/main/res/layout/scene_checkview_s2.xml" value="0.37826797385620914" />
+        <entry key="app/src/main/res/layout/scene_checkview_s3.xml" value="0.36887254901960786" />
+        <entry key="app/src/main/res/layout/survey_spinner_layout.xml" value="0.37826797385620914" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.3194444444444444" />
+        <entry key="app/src/main/res/layout/toast_survey.xml" value="0.39869281045751637" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/add_box_pressed.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/add_box_pressed_round.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_logopain2d.xml" value="0.40520833333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_logopain2d_round.xml" value="0.40520833333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/pen_round.xml" value="0.4197916666666667" />
+        <entry key="app/src/main/res/xml/file_paths.xml" value="0.3189397178281317" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.38112745098039214" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

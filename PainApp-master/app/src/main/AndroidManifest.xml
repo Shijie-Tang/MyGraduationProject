@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pain2d.painappfusion">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS " />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logopain2d_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logopain2d_round"
+        android:supportsRtl="true"
+        android:theme="@style/ApplicationTheme">
+        <activity
+            android:name=".Activity.QuestionGroupNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RadioButtonNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DownloadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SelectFileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CreatePatientDoc"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DefinePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NavActivity"
+            android:launchMode="singleTask"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:authorities="@string/file_provider"
+            android:name="androidx.core.content.FileProvider"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name=".Activity.DrawActivity" />
+        <activity android:name=".Activity.TestActivity" />
+        <activity android:name=".Activity.ViewSurveyActivity" />
+        <activity android:name=".Activity.CheckboxQuestionActivity" />
+        <activity android:name=".Activity.RangeActivity" />
+        <activity android:name=".Activity.DateQuestionActivity" />
+        <activity android:name=".Activity.NumberQuestionActivity" />
+        <activity android:name=".Activity.SelectQuestionActivity" />
+        <activity android:name=".Activity.TextQuestionActivity" />
+
+    </application>
+
+</manifest>
