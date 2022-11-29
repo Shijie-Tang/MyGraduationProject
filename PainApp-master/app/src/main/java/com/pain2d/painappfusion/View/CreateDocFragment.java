@@ -1782,8 +1782,8 @@ public class CreateDocFragment extends Fragment
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
                 byte[] buffer = new byte[1024];
                 int count;
-
                 String filename = ze.getName();
+                Log.e("FILENAME",filename);
                 FileOutputStream fout = new FileOutputStream(path + filename);
 
                 // reading and writing

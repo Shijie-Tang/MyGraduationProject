@@ -1029,9 +1029,9 @@ public class DrawView extends View {
         bitmap.getPixels(pixel,0,width,0,0,width,height);
         for (int i = 0; i < pixels; i++) {
             if (pixel[i] == Color.RED)
-                pixel[i] = Color.WHITE;
-            else
                 pixel[i] = Color.TRANSPARENT;
+            else
+                pixel[i] = Color.WHITE;
         }
         bitmap.setPixels(pixel, 0, width, 0, 0, width, height);
         return Bitmap.createBitmap(bitmap,0,0,828,1169);

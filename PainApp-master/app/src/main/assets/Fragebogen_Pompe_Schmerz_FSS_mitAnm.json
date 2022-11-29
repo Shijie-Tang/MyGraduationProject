@@ -1,0 +1,64 @@
+{
+  "section": {
+    "section_name": "",
+    "question": {
+      "Question_Group": {
+        "name": "SCHWEREGRAD DER ERSCH\u00d6PFUNG (FATIGUE SEVERITY SCALE): FSS",
+        "Subquestion": {
+          "data_type": "numeric",
+          "question_name": {
+            "question": {
+              "name": "Ich habe weniger Motivation, wenn ich ersch\u00f6pft bin.",
+              "question_nr": "1.1"
+            },
+            "question": {
+              "name": "K\u00f6rperliche Belastung f\u00fchrt zu vermehrter Ersch\u00f6pfung.",
+              "question_nr": "1.2"
+            },
+            "question": {
+              "name": "Ich bin schnell ersch\u00f6pft.",
+              "question_nr": "1.3"
+            },
+            "question": {
+              "name": "Die Ersch\u00f6pfung beeinflusst meine k\u00f6rperliche Belastbarkeit.",
+              "question_nr": "1.4"
+            },
+            "question": {
+              "name": "Die Ersch\u00f6pfung verursacht h\u00e4ufig Probleme f\u00fcr mich.",
+              "question_nr": "1.5"
+            },
+            "question": {
+              "name": "Meine Ersch\u00f6pfung verhindert k\u00f6rperliche Bet\u00e4tigung.",
+              "question_nr": "1.6"
+            },
+            "question": {
+              "name": "Die Ersch\u00f6pfung hindert mich an der Ausf\u00fchrung bestimmter Aufgaben und Pflichten.",
+              "question_nr": "1.6"
+            },
+            "question": {
+              "name": "Ersch\u00f6pfung geh\u00f6rt zu den drei mich am meisten behindernden Beschwerden.",
+              "question_nr": "1.6"
+            },
+            "question": {
+              "name": "Die Ersch\u00f6pfung hat Einfluss auf meine Arbeit, meine Familie bzw. mein soziales Leben.",
+              "question_nr": "1.6"
+            }
+          },
+          "Answer_nr": 7,
+          "Answer_Str": [
+            "Stimmt \u00fcberhaupt nicht. 1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "stimmt voll und ganz. 7"
+          ],
+          "Img_Nr": null,
+          "Img_paths": [],
+          "Shiny_Widgets_type": "radioButtons"
+        }
+      }
+    }
+  }
+}
