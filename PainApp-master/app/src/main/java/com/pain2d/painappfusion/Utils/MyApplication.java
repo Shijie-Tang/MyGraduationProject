@@ -675,146 +675,15 @@
  * <https://www.gnu.org/licenses/why-not-lgpl.html>.
  */
 
-package com.pain2d.painappfusion.Activity;
+package com.pain2d.painappfusion.Utils;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Build;
-import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.view.Gravity;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.app.Application;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.pain2d.painappfusion.Container;
-import com.pain2d.painappfusion.Utils.CryptoUtils;
-import com.pain2d.painappfusion.R;
-import com.pain2d.painappfusion.RWList;
-import com.pain2d.painappfusion.Utils.ToastUtils;
-
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-
-import javax.crypto.NoSuchPaddingException;
-
-
-public class LoginActivity extends AppCompatActivity {
-    Context context = this;
-    String password = "password";
-    String key;
-    String salt;
-    SharedPreferences sharedPreferences = null;
-
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-        sharedPreferences = getSharedPreferences(getString(R.string.package_name),MODE_PRIVATE);
-        if (!sharedPreferences.getBoolean("ready",false)){
-            sharedPreferences.edit().putBoolean("ready",true).apply();
-            init();
-        }
-
-        RWList rwList = new RWList();
-        Container.colorList= rwList.readList(context,"colorList.txt");
-        Container.typeList = rwList.readList(context,"typeList.txt");
-
-
-        DisplayMetrics dm = getResources().getDisplayMetrics();
-        int screenWidth = dm.widthPixels;
-        Container.proportion = (float) (screenWidth*0.8)/(float) (827);
-
-        key = sharedPreferences.getString("key","key");
-        salt = sharedPreferences.getString("salt","salt");
-        Button Login = findViewById(R.id.button);
-        EditText input = findViewById(R.id.editTextTextPassword);
-        Login.setOnClickListener(v -> {
-            password = input.getText().toString();
-            boolean check;
-            try {
-                check = CryptoUtils.validatePassword(password,salt,context);
-                if (check){
-                    String correctPassword = password;
-                    Container.password = password;
-                    Intent intent = new Intent(context, NavActivity.class);
-                    intent.putExtra("password",correctPassword);
-                    startActivity(intent);
-                } else if (input.getText().length()==0){
-                    ToastUtils.showToast("Please input a password.");
-                } else {
-                    ToastUtils.showToast("Password ist false.");
-                }
-
-            } catch (NoSuchAlgorithmException e) {
-                e.printStackTrace();
-            } catch (InvalidKeySpecException e) {
-                e.printStackTrace();
-            } catch (NoSuchPaddingException e) {
-                e.printStackTrace();
-            } catch (InvalidKeyException e) {
-                e.printStackTrace();
-            }
-        });
-
-        TextView resetPassword = findViewById(R.id.forget_password);
-        resetPassword.setOnClickListener(v -> {
-            Intent intent =new Intent(context, ResetPasswordActivity.class);
-            intent.putExtra("check","login");
-            startActivity(intent);
-        });
-
-    }
+public class MyApplication extends Application {
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        if(sharedPreferences.getBoolean("firstrun",true)){
-            Intent intent = new Intent(context, DefinePassword.class);
-            intent.putExtra("check","define");
-            startActivity(intent);
-        }
+    public void onCreate() {
+        super.onCreate();
+        ToastUtils.init(this);
     }
-
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    public void init(){
-        RWList rwList = new RWList();
-        //add new pain called none ( black )
-        addPain(rwList,"undefined","#000000");
-        addPain(rwList,"paroxysmal","#FFFF0000");
-        addPain(rwList,"shooting","#FF00FF00");
-        addPain(rwList,"burning","#FFFF00FF");
-        addPain(rwList,"dull pain","#FFD2E6A4");
-        addPain(rwList,"boring","#FFE3686D");
-        addPain(rwList,"throbbing","#FF9B083E");
-        addPain(rwList,"stabbing","#AA436944");
-        addPain(rwList,"pulling","#FFE11330");
-        addPain(rwList,"hot","#FF6C87D7");
-        addPain(rwList,"acute","#AAFFAC30");
-        addPain(rwList,"formication","#FFFF4929");
-        addPain(rwList,"Electricity tingling","#FFA1C3B5");
-        addPain(rwList,"Numbness","#FFC0D843");
-        addPain(rwList,"colic","#FF33224A");
-        addPain(rwList,"spasmodic","#FF126155");
-        addPain(rwList,"lightning-electrifying","#FF269383");
-        addPain(rwList,"tingling","#F4A900");
-        addPain(rwList,"warm","#BB7100");
-        addPain(rwList,"fullness","#75B8FB");
-        addPain(rwList,"soreness","#6CA406");
-        addPain(rwList,"pressure","#1F37A1");
-    }
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    public void addPain(RWList rwList, String name, String color){
-        rwList.writeList(this,name,"typeList.txt");
-        rwList.writeList(context,color,"colorList.txt");
-    }
-
 }
